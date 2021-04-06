@@ -1,0 +1,90 @@
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 940px;
+  }
+  /* div { */
+    /* display: none; */
+  /* } */
+} 
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 530px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 300px;
+  }
+  .header {
+    margin-bottom: 20px;
+  }
+  .header__logo {
+    width: 260px;
+    font-size: 1.6rem; 
+  }
+  .testaments {
+    width: 100%;
+    /* border: 1px solid black; */
+    border-radius: 1px;
+  }
+  .bibleBook {
+    width: 100%;
+    /* border: 1px solid black; */
+    border-radius: 1px;
+    padding: 10px;  
+  }
+  .header-with-panel {
+    width: 300px;
+  }
+  .bookChapter {
+    width: 100%;
+    padding: 10px;
+  }
+  .bookChapter h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .bookChapter__verse {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 250px;
+  }
+  .header {
+    margin-bottom: 15px;
+  }
+  .header__logo {
+    width: 240px;
+    font-size: 1.4rem; 
+  }
+  .testaments {
+    width: 100%;
+    border: none;
+    border-radius: 1px;
+  }
+  .bookChapter {
+    font-size: 0.8rem;
+  }
+  .bookChapter .header-with-panel {
+    
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    width: 720px;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "bible-app",
+  "version": "1.0.0",
+  "description": "A simple full stack SPA for reading the Bible for my education purposes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "bible",
+    "app",
+    "book",
+    "vue",
+    "full stack"
+  ],
+  "author": "Khanchenkov",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
