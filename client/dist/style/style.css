@@ -5,6 +5,9 @@ html {
   font-family: 'Open Sans', 'sans-serif';
 }
 
+[v-cloak] {
+  display: none;
+}
 
 /* stuff  */
 .container {

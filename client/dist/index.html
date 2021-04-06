@@ -11,17 +11,9 @@
   <link rel="stylesheet" href="/style/style.css">
   <link rel="stylesheet" href="/style/media.css">
   <title>Vue Synod App v1.0</title>
-  <style>
-    [v-cloak] {
-      display: none;
-    }
-  </style>
 </head>
 <body>
-
-  
   <div id="app" v-cloak>
-      
       <header class="header">
         <div class="header__wrapper">
           <div class="container">
@@ -34,20 +26,13 @@
           </div>
         </div>
       </header>
-
       <main class="main">
         <div class="main_wrapper">
           <div class="container">
-
-
-
-
             <div class="testaments" v-bind:class="{displayoff: openedTestaments}" >
-              
               <div v-if="loading">
                 <loader/>
               </div>
-              
               <div v-else>
                 <div class="testaments__oldTestament">
                   <h3>Ветхий завет</h3>
@@ -55,7 +40,6 @@
                     <div class="testament__book" v-for="(book, idx) in bible.oldTestament" @click="openBook(idx, bible.oldTestament)">{{book.shortName}}</div>
                   </div>
                 </div>    
-
                 <div class="testaments__newTestament" >
                   <h3>Новый завет</h3>
                   <div class="testament__books">
@@ -63,10 +47,7 @@
                   </div>
                 </div>
               </div> 
-
             </div>
-
-
             <div class="bibleBook" v-bind:class="{displayoff: canOpenBook}">
               <div class="header-with-panel">
                 <h2>{{currentBook}}</h2>
@@ -85,9 +66,7 @@
                 >{{index+1}}</div>
               </div>
             </div>
-
             <div class="bookChapter" v-bind:class="{displayoff: canOpenChapter}">
-              
               <div class="header-with-panel">
                 <h2>{{currentBook}} | Глава {{currentChapterNum}}</h2>
                 <div class="controller">
@@ -100,11 +79,9 @@
                 <div class="bookChapter__verse" v-for="(verse, idx) in currentChapter">{{verse}}</div>
               </div>
             </div>
-
           </div>
         </div>
       </main>   
-
       <footer class="footer">
         <div class="footer__wrapper">
           <div class="container">
@@ -117,9 +94,7 @@
           </div>
         </div>  
       </footer>
-
   </div>
-
   <script type="module" src="main.js"></script>
 </body>
 </html>
